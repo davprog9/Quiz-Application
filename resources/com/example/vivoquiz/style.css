@@ -1,0 +1,20 @@
+.root {
+    -fx-background-color: #c94b4b;  /* fallback for old browsers */
+    -fx-background-color: -webkit-linear-gradient(to top, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+    -fx-background-color: linear-gradient(to top, #4b134f, #c94b4b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.label{
+    -fx-font-family: "Roboto";
+    -fx-text-fill: #eeeeee;
+}
+
+.radio-button{
+    -fx-text-fill: #eeeeee;
+}
+
+#startTest{
+    -fx-background-radius: 50px;
+    -fx-effect: dropshadow(three-pass-box, rgb(255, 255, 255), 10, 0, 0, 0);
+}
+

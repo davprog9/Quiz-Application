@@ -1,0 +1,74 @@
+Instructions for use
+
+We can use the application in order to create a quick quiz for students.
+All we need to do, we need to have a .txt file which will contain our questions, options and correct answers.
+
+In our case we have the QuizFile which contains 14 questions for an example.
+Keep in mind that you can add as many questions as you want. The first page of the program always parses amount of questions
+and displays the amount of questions on the welcome page of the quiz.
+
+It is very important to keep the format of questions in the .txt file as following`
+
+1. Who wrote the book "To Kill a Mockingbird"?
+a. John Steinbeck
+b. Harper Lee
+c. F. Scott Fitzgerald
+d. Ernest Hemingway
+b. Harper Lee
+
+The first line of the format which starts with "1." represents the question itself.
+Following four lines which start with "a. b. c. d." represent the 4 options` such as option a. or option b.
+The very last line provides the correct answer - in our case it is the option b.
+
+The program automatically parses the format as a Question object, by taking the question as question, options as options and last line as a correct answer.
+
+PLEASE BE AWARE`
+When adding the next question with its options and correct answer, you don't need to skip a line.
+Meaning do not do as following`
+
+2. Who wrote the book "To Kill a Mockingbird"?
+a. John Steinbeck
+b. Harper Lee
+c. F. Scott Fitzgerald
+d. Ernest Hemingway
+b. Harper Lee
+
+3. What is the tallest mountain in the world?
+a. K2
+b. Mount Kilimanjaro
+c. Mount Everest
+d. Mount Fuji
+c. Mount Everest
+
+MAKE SURE TO NOT HAVE A LEFT LANE AFTER THE LAST QUESTION - as it will bring an error.
+Don't skip a line in between two questions like above, but write your questions as below example`
+
+3. What is the tallest mountain in the world?
+a. K2
+b. Mount Kilimanjaro
+c. Mount Everest
+d. Mount Fuji
+c. Mount Everest
+3. What is the tallest mountain in the world?
+a. K2
+b. Mount Kilimanjaro
+c. Mount Everest
+d. Mount Fuji
+c. Mount Everest
+
+This way the program will not run into error.
+
+Also, do not forget to keep number of questions in sequence like 1. 2. 3. 4. As well as options a. b. c. d.
+If you make a mistake, the user will see a wrong question number or misleading options.
+
+The application is protected`
+1. If the user provides name which is less than 2 characters.
+2. If the user provides ID which contains anything else besides digits.
+3. If the user tries to start the test without providing both name and id.
+4. If the user tries to submit a question without choosing an option.
+
+At the end of the test - user will see the results of the test.
+
+
+Thank you
+David Arzumanyan
